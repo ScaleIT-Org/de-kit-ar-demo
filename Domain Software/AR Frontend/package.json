@@ -1,0 +1,26 @@
+{
+  "name": "shopfloor_ar",
+  "version": "1.0.0",
+  "description": "Shopfloor augemnted reality app",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "rebase":"git checkout gh-pages; git rebase dev_css; git push origin gh-pages; git checkout dev_css",
+    "start":"http-server -S -C cert.pem -o",
+    "init:cert":"openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthiasSchedel/shopfloor_ar.git"
+  },
+  "keywords": [
+    "shopfloor",
+    "ar"
+  ],
+  "author": "Matthias Schedel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthiasSchedel/shopfloor_ar/issues"
+  },
+  "homepage": "https://github.com/matthiasSchedel/shopfloor_ar#readme"
+}

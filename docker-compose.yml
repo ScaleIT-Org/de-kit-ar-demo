@@ -1,0 +1,7 @@
+version: '2'
+services:
+    de-kit-ar-demo:
+        build: ./Domain Software/AR Frontend/
+        image: scaleit-app-pool.ondics.de:5000/scaleit-app-pool/de-kit-ar-demo:1.0
+        ports:
+          - "51105:8080"
